@@ -54,19 +54,7 @@ entirely on your phone.
 
 ---
 
-## Building from source
 
-No Gradle or Android Studio is required — the app builds with the plain
-Debian/Ubuntu Android tools plus `clang` for the small native library:
-
-```sh
-# needs: aapt, default-jdk, dalvik-exchange (dexter), zipalign, apksigner, clang, lld
-./build.sh
-# output: build/TriumphDiag.apk
-```
-
-The cluster security-key routine is compiled into a tiny native library
-(`native/libtdcrypto.c` → `libtdcrypto.so`) rather than living in the Java/DEX.
 
 ---
 
